@@ -7,6 +7,10 @@ public class Assignment3{
         System.out.print("Enter your name: ");
         String name = scanner.nextLine();
 
+        boolean isInvalidName = name.isEmpty() || name.trim().equals("-");
+
+
+
     }
 
 
