@@ -39,6 +39,26 @@ public class Assignment3{
         }
         scanner.nextLine();
 
+        System.out.print("Enter subject 2: ");
+        String subject2 = scanner.nextLine();
+        if (!subject2.toUpperCase().startsWith("SE-")) {
+            System.out.println("\u001B[31mInvalid Subject Name\u001B[0m");
+            System.exit(1);
+        }
+
+
+        System.out.print("Enter marks 1: ");
+        double marks2 = Math.round(scanner.nextDouble() * 100.0) / 100.0;
+        if (marks2 < 0 || marks2 > 100) {
+            System.out.println("\u001B[31mInvalid Marks\u001B[0m");
+            System.exit(1);
+        }
+        scanner.nextLine();
+
+        
+
+
+
 
 
 
