@@ -83,6 +83,14 @@ public class Assignment3{
             status = "\u001B[35;1mFail\u001B[0m";
         }
 
+        System.out.println("+---------------------------------------------------------+");
+        System.out.printf("| \u001B[34;1m%-55s\u001B[0m |\n", name.toUpperCase());
+        System.out.printf("| Age: %-50d |\n", age);
+        System.out.printf("| Status: %-58s |\n", status);
+        System.out.printf("| Total Marks: %-11.2f     Average Marks: %-9.2f   |\n", totalMarks,averageMarks);
+        System.out.println("+---------------------------------------------------------+");
+        
+
 
 
 
