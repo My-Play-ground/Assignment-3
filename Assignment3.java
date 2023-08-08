@@ -31,6 +31,15 @@ public class Assignment3{
         }
 
 
+        System.out.print("Enter marks 1: ");
+        double marks1 = Math.round(scanner.nextDouble() * 100.0) / 100.0;
+        if (marks1 < 0 || marks1 > 100) {
+            System.out.println("\u001B[31mInvalid Marks\u001B[0m");
+            System.exit(1);
+        }
+        scanner.nextLine();
+
+
 
 
 
