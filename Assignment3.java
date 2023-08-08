@@ -9,6 +9,13 @@ public class Assignment3{
 
         boolean isInvalidName = name.isEmpty() || name.trim().equals("-");
 
+        if (isInvalidName) {
+            System.out.println("\u001B[31mInvalid Name\u001B[0m");
+            System.exit(1);
+        }
+
+        System.out.print("Enter your age (between 10 and 18): ");
+        int age = scanner.nextInt();
 
 
     }
