@@ -71,6 +71,20 @@ public class Assignment3{
         }
         scanner.nextLine();
 
+        double totalMarks = marks1 + marks2 + marks3;
+        double averageMarks = totalMarks / 3;
+
+        String status;
+        if (averageMarks >= 75) {
+            status = "\u001B[35;1mCredit Pass\u001B[0m";
+        } else if (averageMarks >= 55) {
+            status = "\u001B[35;1mPass\u001B[0m";
+        } else {
+            status = "\u001B[35;1mFail\u001B[0m";
+        }
+
+
+
 
 
 
