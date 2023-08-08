@@ -7,7 +7,7 @@ public class Assignment3{
         System.out.print("Enter your name: ");
         String name = scanner.nextLine();
 
-        boolean isInvalidName = name.isEmpty() || name.trim().equals("-");
+        boolean isInvalidName = name.strip().length() == 0 || name.strip().equals("-");
 
         if (isInvalidName) {
             System.out.println("\u001B[31mInvalid Name\u001B[0m");
@@ -85,11 +85,17 @@ public class Assignment3{
 
         System.out.println("+---------------------------------------------------------+");
         System.out.printf("| \u001B[34;1m%-55s\u001B[0m |\n", name.toUpperCase());
-        System.out.printf("| Age: %-50d |\n", age);
+        System.out.printf("| Age: %-41d years old|\n", age);
         System.out.printf("| Status: %-58s |\n", status);
         System.out.printf("| Total Marks: %-11.2f     Average Marks: %-9.2f   |\n", totalMarks,averageMarks);
         System.out.println("+---------------------------------------------------------+");
-        
+        System.out.printf("|       Subject       |      Marks      |     Status      |\n");
+        System.out.println("+---------------------+-----------------+-----------------+");
+        System.out.printf("|       SE-00%s        |      %.2f      |     %-22s |\n", 1 ,marks1, status);
+        System.out.printf("|       SE-00%s        |      %.2f      |     %-22s |\n", 2 ,marks3, status);
+        System.out.printf("|       SE-00%s        |      %.2f      |     %-22s |\n", 3 ,marks3, status);
+        System.out.println("+---------------------+-----------------+-----------------+");
+
 
 
 
