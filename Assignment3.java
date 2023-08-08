@@ -14,8 +14,16 @@ public class Assignment3{
             System.exit(1);
         }
 
-        System.out.print("Enter your age (between 10 and 18): ");
+        System.out.print("Enter your age: ");
         int age = scanner.nextInt();
+
+        if (age < 10 || age > 18) {
+            System.out.println("\u001B[31mInvalid Age\u001B[0m");
+            System.exit(1);
+        }
+        scanner.nextLine();
+
+        
 
 
     }
