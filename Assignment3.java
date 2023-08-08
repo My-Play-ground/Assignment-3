@@ -83,6 +83,36 @@ public class Assignment3{
             status = "\u001B[35;1mFail\u001B[0m";
         }
 
+        String status1;
+        if (marks1 >= 75) {
+            status1 = "\u001B[35;1mCredit Pass\u001B[0m";
+        } else if (marks1 >= 55) {
+            status1 = "\u001B[35;1mPass\u001B[0m";
+        } else {
+            status1 = "\u001B[35;1mFail\u001B[0m";
+        }
+
+        String status2;
+        if (marks2 >= 75) {
+            status2 = "\u001B[35;1mCredit Pass\u001B[0m";
+        } else if (marks2 >= 55) {
+            status2 = "\u001B[35;1mPass\u001B[0m";
+        } else {
+            status2 = "\u001B[35;1mFail\u001B[0m";
+        }
+
+        String status3;
+        if (marks3 >= 75) {
+            status3 = "\u001B[35;1mCredit Pass\u001B[0m";
+        } else if (marks3 >= 55) {
+            status3 = "\u001B[35;1mPass\u001B[0m";
+        } else {
+            status3 = "\u001B[35;1mFail\u001B[0m";
+        }
+
+        
+
+
         System.out.println("+---------------------------------------------------------+");
         System.out.printf("| \u001B[34;1m%-55s\u001B[0m |\n", name.toUpperCase());
         System.out.printf("| Age: %-41d years old|\n", age);
@@ -91,10 +121,12 @@ public class Assignment3{
         System.out.println("+---------------------------------------------------------+");
         System.out.printf("|       Subject       |      Marks      |     Status      |\n");
         System.out.println("+---------------------+-----------------+-----------------+");
-        System.out.printf("|       SE-00%s        |      %.2f      |     %-22s |\n", 1 ,marks1, status);
-        System.out.printf("|       SE-00%s        |      %.2f      |     %-22s |\n", 2 ,marks3, status);
-        System.out.printf("|       SE-00%s        |      %.2f      |     %-22s |\n", 3 ,marks3, status);
+        System.out.printf("|       SE-00%s        |      %.2f      |     %-22s |\n", 1 ,marks1, status1);
+        System.out.printf("|       SE-00%s        |      %.2f      |     %-22s |\n", 2 ,marks2, status2);
+        System.out.printf("|       SE-00%s        |      %.2f      |     %-22s |\n", 3 ,marks3, status3);
         System.out.println("+---------------------+-----------------+-----------------+");
+
+        scanner.close();
 
 
 
