@@ -23,7 +23,15 @@ public class Assignment3{
         }
         scanner.nextLine();
 
-        
+        System.out.print("Enter subject 1: ");
+        String subject1 = scanner.nextLine();
+        if (!subject1.toUpperCase().startsWith("SE-")) {
+            System.out.println("\u001B[31mInvalid Subject Name\u001B[0m");
+            System.exit(1);
+        }
+
+
+
 
 
     }
